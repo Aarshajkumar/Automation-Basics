@@ -23,7 +23,7 @@ public class FileUpload extends Base {
 		driver.navigate().to("https://www.ilovepdf.com/pdf_to_word");
 		WebElement upload = driver.findElement(By.id("pickfiles"));
 		upload.click();
-		StringSelection selection =  new StringSelection("C:\\Users\\Dell\\git\\Automation\\AutomationTesting\\src\\test\\resources\\Core_Java_Automation_QA.pdf");
+		StringSelection selection =  new StringSelection("C:\\Users\\Dell\\git\\Automation-Basics\\AutomationTesting\\src\\test\\resources\\methods.pdf");
 		//enta string coppy pasteokecheyanam eenkil string selection class help cheyum athu
 		//kondu anu string selection class use cheyune. 
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
@@ -49,13 +49,13 @@ public class FileUpload extends Base {
 		// TODO Auto-generated method stub
 		FileUpload fileupload = new FileUpload();
 		fileupload.browserInitialization();
-		fileupload.fileuploadusingsendkeys();
-//		try {
-//			fileupload.fileuploadusingkeyboard();
-//		} catch (AWTException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+//		fileupload.fileuploadusingsendkeys();
+		try {
+			fileupload.fileuploadusingkeyboard();
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
