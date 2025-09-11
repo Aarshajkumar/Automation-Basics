@@ -13,7 +13,7 @@ public class FileUpload extends Base {
 	public void fileuploadusingsendkeys() {
 		driver.navigate().to("https://demo.guru99.com/test/upload/");
 		WebElement choosefile = driver.findElement(By.xpath("//input[@id='uploadfile_0']"));
-		choosefile.sendKeys("C:\\Users\\Dell\\eclipse-workspace\\AutomationTesting\\src\\test\\resources\\Core_Java_Automation_QA.pdf");
+		choosefile.sendKeys("C:\\Users\\Dell\\git\\Automation-Basics\\AutomationTesting\\src\\test\\resources\\Core_Java_Automation_QA.pdf");
 		WebElement terms = driver.findElement(By.xpath("//input[@id='terms']"));
 		terms.click();
 		WebElement submitbutton = driver.findElement(By.xpath("//button[@id='submitbutton']"));
